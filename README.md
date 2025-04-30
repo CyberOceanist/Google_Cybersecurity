@@ -19,7 +19,7 @@ The following is a portfolio of notes and projects completed during the Google C
 
 1. Foundations of Cybersecurity (No notes)
 
-2. Play It Safe: Manage Security Risks
+2. Play It Safe: Manage Security Risks (No notes)
 
 3. Connect and Protect: Networks and Network Security
 
@@ -31,4 +31,4 @@ The following is a portfolio of notes and projects completed during the Google C
 
 7. Automate Cybersecurity Tasks with Python
 
-8. Put It to Work: Prepare for Cybersecurity Jobs
+8. Put It to Work: Prepare for Cybersecurity Jobs (No notes)
