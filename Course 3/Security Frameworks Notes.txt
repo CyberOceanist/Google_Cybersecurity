@@ -1,0 +1,211 @@
+Security Frameworks
+Guidelines used for building plans to help mitigate risks and threats to data and privacy, such as social engineering attacks and ransomware. Especially true for physical and virtual data.
+
+Security Controls
+Safeguards designed to reduce the possibility and impact of a security threat, risk, or vulnerability. Measures used to lower risk and threats to data and privacy. Can be physical, technical, and administrative, and used to prevent, detect, or correct security issues.
+
+Examples: 
+Physical - Gates, fences, locks. Surveillance cameras, access cards
+Technical - Firewalls, MFA, Antivirus software
+Administrative - Separation of duties, authorization, asset classification
+
+
+Encryption
+Converting data from a readable format into an encoded data. Converting data from plaintext to ciphertext. Raw, encoded message unreadable to both humans and computers. Until its been decrypted back into its original plaintext form, it cannot be read. 
+
+Authentication 
+Process of verifying who someone or something is. Logging in with a username and password. MFA - Additional form of authentication
+
+Biometrics
+Unique physical characteristics hat an be used to verify a person's identity.
+Fingerprint, eye, and finger scan.
+
+Vishing
+Social engineering attack that exploits electronic voice communication to obtain sensitive information or to impersonate a known source.
+
+Authorization
+Concept of granting access to specific resources within a system. 
+
+Relationship between frameworks and controls
+Cyber Threat Framework (CTF) and International Organization for Standardization/International Electrotechnical Commission.
+
+CTF
+Developed by the U.S. government to provide "a common language for describing and communicating information about cyber threat activity"
+
+ISO/IEC 27001 - Framework 
+Organizations of all sectors and sizes to manage the security of assets, like financial info, intellectual property, employee data, and information entrusted to third parties. Provides a collection of controls that orgs can use to improve their security posture
+
+---------------------------------------------------------------------------
+
+CIA Triad model (Review)
+Model that helps inform how orgs consider risk when setting up systems and security policies
+
+Confidentiality, Integrity, Availability
+Confidentiality - Only authorized users can access specific assets or data
+Integrity - The data is correct, authentic and reliable
+Availability - Data is accessible to those who are authorized to access it
+
+Practical usage of CIA Triad
+Security Posture - Organization's ability to manage its defense of critical assets and data, and react to change
+
+Confidentiality - Implementation of design principles, like the principle of lease privilege. Limits users' access to only the information they need to complete work-related tasks. Example is needing TFA or MFA to access your account.
+
+Integrity - Having protocols in place to verify the authenticity of data is essential. Such as cryptography, which is used to transform data so unauthorized parties cannot read or tamper with it. Another example is enabling encryption, used to prevent access and ensure data, such as messages on an organization's internal chat platform, cannot be tampered with. Example would be verifying a charge that was on your account.
+
+Availability - When a system adheres to both availability and confidentiality principles, data can be used when needed. Like an org allowing remote employees to access its internal network to perform their jobs. Having access to corporate accounts ,but not data related to ongoing development projects. An example would be yourself logging into your checking account to check your balances.
+
+---------------------------------------------------------------------------
+
+National Institute of Standards and Technology (NIST) Frameworks
+NIST Cybersecurity Framework (CSF)
+Voluntary framework that consists of standards, guidelines, and best practices to manage cybersecurity risk. 
+
+In CSF v2.0 (latest version), a new 'Govern' core function was added, emphasizing the importance of strong cybersecurity governance. This is applicable regardless of the organization you work for.
+
+5 important core functions
+
+1. Identify - Management of cybersecurity risk and its effect on an org's people and assets. 
+2. Protect - Strategy used to protect an org through the implementation of policies, procedures, training, and tools that help to mitigate threats
+3. Detect - Identifying potential security incidents and improving monitoring capabilities to increase the speed and efficiency of detections
+4. Respond - Making sure the proper procedures are used to contain, neutralize, and analyze security incidents, and implement improvements to the security process. 
+5. Recover - The process of returning affected systems back to normal operation 
+
+CSF Benefits and how it protects
+Workplace scenario example:
+You are an entry analyst, and you receive a high-risk notification that  workstation has been compromised. You IDENTIFY the workstation, and discover that there's an unknown device plugged into it. You block the unknown device remotely to stop any potential threat and PROTECT the org. You remove the infected workstation to prevent the spread of the damage and use tools to DETECT any additional threat actor behavior. You RESPOND by investigating the incident to determine who used the unknown device, how the threat occurred, what was affected, and where the attack originated. You discover that an employee was charging their infected phone using a USB port on their work laptop. Finally, you try to RECOVER any files or data that were affected, and correct any damage the threat caused to the workstation itself.
+
+NIST S.P. (Special Publication) 800-53
+A unified framework for protecting the security of information systems within the federal government, including the systems provided by private companies for federal government use. Especially if you're interested in government work.
+
+---------------------------------------------------------------------------
+
+Open Web Applications Security Project, now Open Worldwide Application Security Project (OWASP) Security Principles
+
+- Minimize the attack surface area 
+Attack surface - all the potential vulnerabilities that a threat actor could exploit
+Attack vectors - Pathways attackers used to penetrate security defense, like phishing emails and weak passwords.
+
+Example strategies: Disable software features, restrict access, or establish more complex password requirements
+
+- Principle of least privilege
+- Users have the least amount of access required to perform their everyday tasks. Reduce the amount of data a security breach may cause. 
+Example: Access to log data as entry level analyst, but not access to change user permissions. 
+
+- Defense in depth
+- Organization should have multiple security controls that address risks and threats in different ways. 
+Example: Deploying MFA, firewalls, intrusion detection systems, and permission settings
+
+- Separation of duties
+- Critical actions should rely on multiple people, each of whom follow the principle of least privilege.
+- Prevent individuals from carrying out fraudulent or illegal activities. No one should be given so many privileges that they can misuse the system. Example: A person who signs the paychecks in the company, shouldn't also be the person preparing them
+
+- Keep security simple
+- Unnecessarily complex solutions should be avoided because they can become unmanageable. It reduces collaboration for solutions, and makes security difficult
+
+- Fix security issues correctly
+- Expected to identify the root cause quickly, then correct any identified vulnerabilities and conduct tests.
+Example: Weak password to access org's Wi-Fi. Stricter password policies could be put in place
+
+Additional OWASP Security Principles
+- Establish secure defaults
+- Optimal security state of an application is also its default state of users; it should take extra work to make the application insecure
+
+- Fail securely
+- When a control fails or stops it should do so by defaulting to its most secure option. 
+Example: When a firewall fails, it should simply close all connections and block all new ones, rather than accepting everything.
+
+- Don't trust services
+- Many orgs work with third-party partners, which often have different security policies than the org. The org shouldn't explicitly trust their partners' systems are secure. 
+Example: If a third-party vendors tracks reward points for airline customers, the airline should ensure that the balance is accurate before sharing that information
+
+- Avoid security by obscurity
+- The security of key systems should not rely on keeping details hidden, or keeping the source code secret. It should rely ypon other factors, like reasonable password policies, defense in depth, business transaction limits, solid network architecture, and fraud and audit controls
+
+---------------------------------------------------------------------------
+
+Going on online forums like Medium, research different security trends and topics. Networking - Conferences with cybersecurity.
+
+---------------------------------------------------------------------------
+
+Conducting security audits
+- A review of an organization's security controls, policies, and procedures against a set of expectations
+
+Internal and external audits that fulfill criteria. Internal includes outlined policies, procedures, and best practices. External includes regulatory compliance, laws and federal regulations
+
+Focus on internal audit - Entry-level analysts might be asked to contribute
+Conducted by a team of people, might include: compliance officer, security manager, and other security team members.
+
+Goals and objectives
+Goal: Ensure an org's IT practices are meeting industry and org standards
+Objective: Identify and address areas of remediation and growth. Direction and clarity by identifying current failures and developing a plan to correct them
+
+Help improve an org's security posture, safeguard data and avoid fines and penalties from governing agencies, due to a lack of compliance
+
+Factors that affect audits
+- Industry type
+- Org size
+- Ties to the applicable government regulations
+- A business's geographical location
+- Business decision to adhere to a specific regulatory compliance
+
+Purpose of internal audits
+- Identify organizational risk
+Assess controls
+Correct compliance issues
+
+Common elements:
+- Establishing the scope and goals
+- Conducting a risk assessment
+- Completing a controls assessment
+- Assessing compliance
+- Communicating results
+
+Ask yourself these questions for an audit:
+What is the audit meant to achieve
+Which assets are most at risk?
+Are current controls sufficient to protect those assets?
+What controls and compliance regulations need to be implemented?
+
+Establishing the scope and goals
+Scope - Specific criteria of an internal security audit. Identify people, assets, policies, procedures, and technologies
+Goals - Outline of the orgs security objectives, or what they want to achieve in improving security posture.
+
+Conducting a risk assessment
+- Focused on identifying potential threats, risks and vulnerabilities
+Managers or other stakeholders, analyze details in the risk assessment to consider types of controls and regulations needing to be in place.
+
+Completing a controls assessment/conduct the audit
+- Closely reviewing an organization's existing assets, then evaluating potential risks to those assets, to ensure internal controls and processes are effective. 
+
+Control categories:
+- Administrative controls
+- Human component of cybersecurity - Policies and procedures that define how an org manages data, such as password policies
+
+Technical Controls
+- Hardware and software solutions used to protect assets, such as intrusion detection systems (IDS) and encryption.
+
+Physical Controls
+- Measures put in place to prevent access to protected assets, like surveillance cameras and locks.
+
+Assessing Compliance
+- Laws that orgs must follow to ensure private data remains secure.
+Example: General Data Protection Regulation (GDPR) and Payment Card Industry Data Security Standard (PCI DSS)
+
+Communicating results
+- Results and recommendations need to be communicated to stakeholders
+- Summarizes the scope and goals
+Lists existing risks
+Notes how quickly those risks need to be addressed
+Identifies compliance regulations
+Provides recommendations
+
+Scope of audit/Checklist
+- List assets that will be assessed (e.g., firewalls are configured correctly, PII is secure, physical assets are locked, etc.) 
+
+- Note how the audit will help the organization achieve its desired goals
+
+- Indicate how often an audit should be performed
+
+- Include an evaluation of organizational policies, protocols, and procedures to make sure they are working as intended and being implemented by employees
+
+
